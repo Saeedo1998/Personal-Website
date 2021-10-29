@@ -17,6 +17,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="Script.js"></script>
 
         <style>
                 body {
@@ -43,6 +45,16 @@
                         font-family: 'Broadway';
                 }
         </style>
+
+        <!-- old scrapped code, moved to Script.js -->
+        <!-- <script src="Script.js" type="text/JavaScript">
+                function activeHome () {
+             //    $(document.getElementById('HomeLink')).toggleClass('active');
+                $(document.getElementById('HomeLink')).addClass('active');
+             //    document.getElementById('Hide').style.display='block';
+             // document.getElementById('Show').style.display='none';
+             };
+             </script> -->
 </head>
 
 <body>
@@ -56,8 +68,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                        <a class="nav-link active" href="#">Home
+                                <li class="nav-item">
+                                        <a id="HomeLink" onclick="activeHome()" class="nav-link" href="#">Home
                                                 <!--<span class="sr-only">(current)</span>-->
                                         </a>
                                 </li>
