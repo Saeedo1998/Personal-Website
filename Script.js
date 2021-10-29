@@ -14,11 +14,9 @@ function changePageTitle() {
     document.title = 'Saeed Badghaish';
 }
 
-// function redirect() {
-//     if (window.location.href = "~/Pages/Portfolio.html") {
-//         window.location.href = "https://www.saeedo98.com/"
-//     }
-// }
+function redirectToHome() {
+    window.location.href = "https://www.saeedo98.com/"
+}
 
 //global call (automatically called in all pages)
 // window.onload = function () {
