@@ -9,12 +9,13 @@ function activeHome() {
     // document.getElementById('Show').style.display='none';
 };
 
-function changePageTitle() {
+window.onload = function changePageTitle() {
     // newPageTitle = 'Saeed Badghaish';
     document.title = 'Saeed Badghaish';
 }
 
 function redirectToHome() {
+    document.writeln("");
     window.location.href = "https://www.saeedo98.com/"
 }
 
