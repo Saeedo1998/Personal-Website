@@ -21,10 +21,10 @@ function changePageTitle() {
 // }
 
 //global call (automatically called in all pages)
-window.onload = function () {
-    var url = location.href;
-    if (url = "~/Pages/Portfolio.html") {
-        location.href = "../Index.html"
-    }
-}
+// window.onload = function () {
+//     var url = location.href;
+//     if (url = "~/Pages/Portfolio.html") {
+//         location.href = "../Index.html"
+//     }
+// }
 
