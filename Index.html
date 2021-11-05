@@ -2,7 +2,7 @@
 
 <head>
         <title>
-               
+
         </title>
 
         <link rel="stylesheet" type="text/css" href="../Fonts/stylesheet.css" />
@@ -22,33 +22,101 @@
 
         <style>
                 body {
-                        background-color: white;
+                        color: #ebebeb;
+
+                        background-color: #3c3c3c;
                         /* background-color: #3F5369; */
                         /*background-image: url('Images/wallpaper.jpg');*/
-                        background-image: url('Images/Image (15).png');
+                        /* background-image: url('Images/Image (15).png'); */
+                        background-image: url('Images/seamless-abstract-black-floral-pattern.jpg');
                         font-family: 'Teko';
                         /* font-family: 'Roboto Mono', monospace; */
                         /* font-weight: 600; */
-                        font-size: 24px;
                 }
 
-                #rapture1 {
-                        border: 7px outset #808080;
+                nav{
+                        font-size: 24px;  
+
+                }
+                nav a{
+                        color: #ebebeb;
+                }
+                nav a:hover{
+                        color: #acacac;
+
+                }
+                nav a:active{
+                        color: #d6d6d6;
+
                 }
 
-                img {
-                        max-width: 100%;
-                        height: auto;
+                /* whole body except nav */
+                .parentContainer{
+                        font-size: 35px;
+
+                }
+
+                .navbar-brand{
+                        color: #ebebeb;
+                }
+                .navbar-custom .navbar-custom .navbar-text .navbar-dark{
+                        background-color: #ffffff56;
+                        /* color: black; */
+                        backdrop-filter: blur(7px);
+                        -webkit-backdrop-filter: blur(7px);
+
+                }
+                .custom-toggler .navbar-toggler-icon {
+                        /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,235,235, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+                .custom-toggler.navbar-toggler {
+                        /* border-color: rgb(255,102,203); */
+                        border-color: #ebebeb90;
+                } 
+
+                .container {
+
+                        text-shadow: 2px 2px #3c3c3c;
+
+                        background-color: #00000057;
+                        backdrop-filter: blur(7px);
+                        -webkit-backdrop-filter: blur(7px);
+
                 }
 
                 .header {
-                        font-family: 'Broadway';
+                        /* font-family: 'Broadway'; */
                 }
 
-                .container{
-                        background-color: #ffffff10;
-                        backdrop-filter: blur(7px);
-                        -webkit-backdrop-filter: blur(7px);
+                /* If the screen size is 601px wide or more */
+                @media screen and (min-width: 601px) {
+                        .container {
+                                font-size: 90%;
+                        }
+
+                        .header {
+                                font-size: 135%;
+                        }
+                        .subHeader{
+                                font-size: 80%; 
+                        }
+                }
+
+                /* If the screen size is 600px wide or less */
+                @media screen and (max-width: 600px) {
+                        .container {
+                                /* font-size: 20px; */
+                                font-size: 70%;
+                        }
+
+                        .header {
+                                /* font-size: 34px;   */
+                                font-size: 150%;
+                        }
+                        .subHeader{
+                                font-size: 80%; 
+                        }
                 }
         </style>
 
@@ -64,9 +132,9 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-custom">
                 <a class="navbar-brand" href="#">Saeed Badghaish</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -125,41 +193,47 @@
                         </form>
                 </div>
         </nav>
-        <div class="container">
-
-
-                <div class="row">
-                        <div class="col-md-4">
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                        </div>
-                </div>
+        <div class="parentContainer">
                 <br>
-                <div class="header text-center">
-                        <h1> Welcome </h1>
-                </div>
-                <br />
+                <div class="container">
 
-                <br />
-                <div class="text-center">
 
-                        My name is Saeed Badghaish
+                        <div class="row">
+                                <div class="col-md-4">
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                </div>
+                        </div>
+                        <br>
+                        <div class="header text-center">
+                                Welcome
+                        </div>
                         <br />
+
+                        <br />
+                        <div class="text-center">
+
+                                My name is Saeed Badghaish
+                                <br />
+                                <div class=subHeader>
+                                        I am a Full Stack Web Developer
+                                </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
                 </div>
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
