@@ -11,12 +11,13 @@ function activeHome() {
 
 window.onload = function changePageTitle() {
     // newPageTitle = 'Saeed Badghaish';
-    document.title = 'Saeed Badghaish';
     var url = window.location.href;
-    if (url.includes("Index")) {
+    if (url.includes("Portfolio")) {
+        document.title = 'Saeed Badghaish - Portfolio';
+    } else {
         document.title = 'Saeed Badghaish - Home';
-
     }
+
 }
 
 function redirectToHome() {
