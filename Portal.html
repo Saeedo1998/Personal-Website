@@ -238,13 +238,18 @@
                         <br>
                         <!-- <audio src="Portal\12StillAlive.mp3" controls autoplay loop></audio> -->
                         <script type="Text/JavaScript">
-                                const audio = new Audio("Portal\12StillAlive.mp3");
-                                audio.addEventListener("canplaythrough", event => {
-                                 /* the audio is now playable; play it if permissions allow */
-                                 audio.play();
-                                });
+                               
+                                window.onload = function f() {
+                                        const audio = new Audio("Portal/12StillAlive.mp3");
+                                        audio.addEventListener("canplaythrough", event => {
+                                        /* the audio is now playable; play it if permissions allow */
+                                        audio.play();
+                                        });
+                                }
+                                
                                 
                         </script>
+                        
                         <div class="header text-center">
                                 <i>"ARE YOU STILL THERE?"</i>
                         </div>
