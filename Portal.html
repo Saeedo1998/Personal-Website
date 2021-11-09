@@ -1,0 +1,269 @@
+﻿<html>
+
+<head>
+        <title>
+
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="../Fonts/stylesheet.css" />
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="Images\pngwing.com.png">
+        <!-- <link rel="icon" href="https://cdn.worldvectorlogo.com/logos/aperture-science.svg"> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <script src="Script.js"></script>
+
+        <style>
+                body {
+                        color: #ebebeb;
+
+                        background-color: #3c3c3c;
+                        /* background-color: #3F5369; */
+                        /*background-image: url('Images/wallpaper.jpg');*/
+                        /* background-image: url('Images/Image (15).png'); */
+                        background-image: url('Images/seamless-abstract-black-floral-pattern.jpg');
+                        font-family: 'Teko';
+                        /* font-family: 'Roboto Mono', monospace; */
+                        /* font-weight: 600; */
+                }
+
+                nav {
+                        font-size: 24px;
+
+                }
+
+                nav a {
+                        color: #ebebeb;
+                }
+
+                nav a:hover {
+                        color: #acacac;
+
+                }
+
+                nav a:active {
+                        color: #d6d6d6;
+
+                }
+
+                /* whole body except nav */
+                .parentContainer {
+                        font-size: 35px;
+
+                }
+
+                .navbar-brand {
+                        color: #ebebeb;
+                }
+
+                .navbar-custom .navbar-custom .navbar-text .navbar-dark {
+                        background-color: #ffffff56;
+                        /* color: black; */
+                        backdrop-filter: blur(7px);
+                        -webkit-backdrop-filter: blur(7px);
+
+                }
+
+                .custom-toggler .navbar-toggler-icon {
+                        /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,235,235, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+
+                .custom-toggler.navbar-toggler {
+                        /* border-color: rgb(255,102,203); */
+                        border-color: #ebebeb90;
+                }
+
+                .container {
+
+                        text-shadow: 2px 2px #3c3c3c;
+
+                        background-color: #00000057;
+                        backdrop-filter: blur(7px);
+                        -webkit-backdrop-filter: blur(7px);
+
+                }
+
+                .header {
+                        /* font-family: 'Broadway'; */
+                }
+
+                /* If the screen size is 601px wide or more */
+                @media screen and (min-width: 601px) {
+                        .container {
+                                font-size: 90%;
+                        }
+
+                        .header {
+                                font-size: 135%;
+                        }
+
+                        .subHeader {
+                                font-size: 80%;
+                        }
+
+                        .content {
+                                font-size: 70%;
+                        }
+                }
+
+                /* If the screen size is 600px wide or less */
+                @media screen and (max-width: 600px) {
+                        .container {
+                                /* font-size: 20px; */
+                                font-size: 70%;
+                        }
+
+                        .header {
+                                /* font-size: 34px;   */
+                                font-size: 150%;
+                        }
+
+                        .subHeader {
+                                font-size: 80%;
+                        }
+
+                        .content {
+                                font-size: 70%;
+                        }
+                }
+                
+        </style>
+
+        <!-- old scrapped code, moved to Script.js -->
+        <!-- <script src="Script.js" type="text/JavaScript">
+                function activeHome () {
+             //    $(document.getElementById('HomeLink')).toggleClass('active');
+                $(document.getElementById('HomeLink')).addClass('active');
+             //    document.getElementById('Hide').style.display='block';
+             // document.getElementById('Show').style.display='none';
+             };
+             </script> -->
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-brand" href="#">Saeed Badghaish</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a id="HomeLink" onclick="activeHome()" class="nav-link active" href="#">Home
+                                                <!--<span class="sr-only">(current)</span>-->
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link disabled" href="Pages/Portfolio.html"> <span
+                                                        class="glyphicon glyphicon-film"></span> Portfolio (coming
+                                                soon..) </a>
+                                </li>
+
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                                <!--search-->
+                                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                                <!-- Social media dropdown -->
+                                <ul class="navbar-nav mr-auto">
+                                        <!-- <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#"
+                                                        id="navbarDropdownSocialMedia" role="button"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        My social media
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSocialMedia">
+                                                        <a class="dropdown-item"
+                                                                href="https://www.linkedin.com/in/saeed-badghaish-0045a7190/"
+                                                                target="_blank">LinkedIn</a>
+                                                        <a class="dropdown-item" href="https://github.com/Saeedo1998"
+                                                                target="_blank">GitHub</a> -->
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <!-- </div>
+                                        </li> -->
+                                        <li class="nav-item">
+                                                <a class="nav-link" target="_blank"
+                                                        href="https://www.linkedin.com/in/saeed-badghaish-0045a7190/">
+                                                        <span class="glyphicon glyphicon-film"></span> LinkedIn </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" target="_blank"
+                                                        href="https://github.com/Saeedo1998">
+                                                        <span class="glyphicon glyphicon-film"></span> GitHub </a>
+
+                                        </li>
+                                </ul>
+                        </form>
+                </div>
+        </nav>
+        <div class="parentContainer">
+                <br>
+                <div class="container">
+
+
+                        <div class="row">
+                                <div class="col-md-4">
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                </div>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                                <img src="https://www.nicepng.com/png/full/376-3767635_are-you-still-there-portals-portal-turret-png.png" height="30%">
+                        </div>
+                        <br>
+                        <!-- <audio src="Portal\12StillAlive.mp3" controls autoplay loop></audio> -->
+                        <script type="Text/JavaScript">
+                                const audio = new Audio("Portal\12StillAlive.mp3");
+                                audio.addEventListener("canplaythrough", event => {
+                                 /* the audio is now playable; play it if permissions allow */
+                                 audio.play();
+                                });
+                                
+                        </script>
+                        <div class="header text-center">
+                                <i>"ARE YOU STILL THERE?"</i>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+
+                </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
