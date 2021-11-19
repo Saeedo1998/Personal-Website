@@ -14,7 +14,10 @@ window.onload = function changePageTitle() {
     var url = window.location.href;
     if (url.includes("Portfolio")) {
         document.title = 'Saeed Badghaish - Portfolio';
-    } else {
+    } else if (url.includes("css-playground")){
+        document.title = 'Saeed Badghaish - CSS Playground';
+    }
+    else {
         document.title = 'Saeed Badghaish - Home';
     }
 
@@ -32,5 +35,35 @@ function redirectToHome() {
 //         location.href = "../Index.html"
 //     }
 // }
+
+function copyTextOld(text) {
+    // var copyText = document.getElementById("myInput");
+    var copyText = text;
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    
+    var tooltip = document.getElementById("myTooltip");
+    // tooltip.innerHTML = "Copied: " + copyText.value;
+    tooltip.innerHTML = "Copied Successfully";
+
+  }
+
+  function copyTextFromElement(elementID, actionElementID) {
+    let element = document.getElementById(elementID); //select the element
+    let elementText = element.textContent; //get the text content from the element
+    copyText(elementText); //use the copyText function below
+    let actionElement = document.getElementById(actionElementID);
+    actionElement.innerHTML = "Copied!";
+  }
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text);
+  }
+
+  function mouseLeave(elementID) {
+    let element = document.getElementById(elementID); //select the element
+    element.innerHTML = "Copy";
+  }
 
 
