@@ -125,7 +125,7 @@ hr {
 
 canvas {
         width: 100%;
-        height: 100%;
+        height: 500px;
 }
 .gradientBlackToBlue{
         background: linear-gradient(#000000, #31338d);
