@@ -94,8 +94,9 @@ a:active {
         /* font-family: 'Broadway'; */
 }
 
-.about {
+.section {
         width: 80%;
+        margin-left: 5%;
 }
 
 .oval {
@@ -179,6 +180,10 @@ canvas {
         -webkit-backdrop-filter: blur(7px);
 }
 
+.subTitle {
+        color: #ebebeb99;
+        text-shadow: none;
+}
 
 /* If the screen size is 601px wide or more */
 @media screen and (min-width: 601px) {
@@ -192,6 +197,10 @@ canvas {
 
         .subHeader {
                 font-size: 80%;
+        }
+
+        .subTitle {
+                font-size: 70%;
         }
 
         .content {
@@ -213,6 +222,10 @@ canvas {
 
         .subHeader {
                 font-size: 80%;
+        }
+
+        .subTitle {
+                font-size: 70%;
         }
 
         .content {
