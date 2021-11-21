@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        
+
     </title>
 
     <link rel="stylesheet" type="text/css" href="../Fonts/stylesheet.css" />
@@ -13,30 +13,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <script src="../Script.js"></script>
+    <script src="Script.js"></script>
 
     <link rel="stylesheet" href="Style.css">
 
 </head>
 
-<body onload="redirectToHome()" on>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Saeedo_98</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body onload="redirectToHome()">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="Index.html">Saeed Badghaish</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="Index.html">Home
-                        <!-- <span class="sr-only">(current)</span> -->
+                    <a id="HomeLink" class="nav-link" href="Index.html">Home
+                        <!--<span class="sr-only">(current)</span>-->
                     </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link active" href="#">
-                        <span class="glyphicon glyphicon-film"></span> Portfolio </a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Portfolio.html"> <span class="glyphicon glyphicon-film"></span>
+                        Portfolio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="css-playground.html">
+                        CSS Playground </a>
                 </li>
 
 
@@ -44,25 +50,25 @@
             <form class="form-inline my-2 my-lg-0">
                 <!--search-->
                 <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                 <!-- Social media dropdown -->
                 <ul class="navbar-nav mr-auto">
                     <!-- <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#"
-                                                        id="navbarDropdownSocialMedia" role="button"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                        My social media
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSocialMedia">
-                                                        <a class="dropdown-item"
-                                                                href="https://www.linkedin.com/in/saeed-badghaish-0045a7190/"
-                                                                target="_blank">LinkedIn</a>
-                                                        <a class="dropdown-item" href="https://github.com/Saeedo1998"
-                                                                target="_blank">GitHub</a> -->
+                                        <a class="nav-link dropdown-toggle" href="#"
+                                                id="navbarDropdownSocialMedia" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                My social media
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSocialMedia">
+                                                <a class="dropdown-item"
+                                                        href="https://www.linkedin.com/in/saeed-badghaish-0045a7190/"
+                                                        target="_blank">LinkedIn</a>
+                                                <a class="dropdown-item" href="https://github.com/Saeedo1998"
+                                                        target="_blank">GitHub</a> -->
                     <!-- <div class="dropdown-divider"></div> -->
                     <!-- </div>
-                                        </li> -->
+                                </li> -->
                     <li class="nav-item">
                         <a class="nav-link" target="_blank"
                             href="https://www.linkedin.com/in/saeed-badghaish-0045a7190/">
@@ -78,59 +84,44 @@
             </form>
         </div>
     </nav>
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-4">
-
-            </div>
-
-            <div class="col-md-4">
-
-            </div>
-
-            <div class="col-md-4">
-
-            </div>
-        </div>
-
+    <div class="parentContainer">
         <br>
+        <div class="container">
 
-        <div class="header text-center">
-            <h1> Portfolio </h1>
-        </div>
+            <div class="row">
+                <div class="col-md-4">
 
-        <br />
-        <br />
+                </div>
 
-        <div class="about-section">
-            <div class="subHeader text-left">
-                About
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
             </div>
-            <div class="text-left">
-                Full Stack Developer based in Jeddah, Saudi Arabia. Working in ASP.NET C# web form development
+            <br>
+            <div class="header text-center">
+                Projects
             </div>
-        </div>
-
-        <hr>
-        <br>
-
-        <div class="about-section">
-            <div class="subHeader text-left">
-                Skills
+            <br>
+            <br>
+            <div class="">
+                <div class="text-left">
+                    <a href="Portfolio/online-game-store.html">
+                        Online Game Store
+                    </a>
+                </div>
             </div>
-            Web Development - Programming - C# - Java - JavaScript
+
+            <br>
+            <br>
+            <br>
+            <br>
+
         </div>
-
-        <hr>
-        <br>
-
-        <div class="about-section">
-            <div class="subHeader text-left">
-                Work
-            </div>
-        </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
