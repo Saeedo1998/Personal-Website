@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-        font-size: 24px;
+        font-size: 28px;
 
 }
 
@@ -28,6 +28,11 @@ nav a:hover {
 
 nav a:active {
         color: #d6d6d6;
+}
+
+.active {
+        color: #ffffff;
+        text-shadow: 0px 0px 15px #acacac;
 }
 
 a {
@@ -46,10 +51,37 @@ a:active {
 
 }
 
-.active {
-        color: #ffffff;
-        text-shadow: 0px 0px 15px #acacac;
+.email {
+        font-size: 85%;
+        background: #36363650 none repeat scroll 0 0;
+        border: 1px solid #1cc0da;
+        border-radius: 5px 20px;
+        display: -webkit-inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 }
+
+.email:hover {
+        border: 1px solid #1fe1ff;
+        text-shadow: 0px 0px 10px #17A2B8;
+        background: #36363670 none repeat scroll 0 0;
+
+
+}
+
+.email:active {
+        border: 1px solid #17A2B8;
+
+
+}
+
+
 
 /* whole body except nav */
 .parentContainer {
@@ -79,39 +111,27 @@ a:active {
         border-color: #ebebeb90;
 }
 
-.container {
-
-        text-shadow: 2px 2px #3c3c3c;
-
-        background-color: #00000057;
-        /* background: linear-gradient(#00000057, #9198e500); */
-        backdrop-filter: blur(7px);
-        -webkit-backdrop-filter: blur(7px);
-
-}
-
-.header {
-        /* font-family: 'Broadway'; */
-}
-
 .section {
-        width: 80%;
         margin-left: 5%;
 }
 
+.about-section {
+        width: 80%;
+}
+
 .oval {
-        /* background: #363636 none repeat scroll 0 0; */
+        background: #363636 none repeat scroll 0 0;
         border: 2px solid #ebebeb;
         border-radius: 80px 80px;
-        display: inline;
+        display: -webkit-inline-flex;
         margin-left: auto;
         margin-right: 20px;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        margin-top: auto;
+        margin-bottom: 1%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: auto;
+        padding-bottom: auto;
 }
 
 hr {
@@ -180,10 +200,36 @@ canvas {
         -webkit-backdrop-filter: blur(7px);
 }
 
+.container {
+
+        text-shadow: 2px 2px #3c3c3c;
+
+        background-color: #00000057;
+        /* background: linear-gradient(#00000057, #9198e500); */
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+
+}
+
+.subHeader {
+        font-size: 100%;
+}
+
 .subTitle {
         color: #ebebeb99;
         text-shadow: none;
+        font-size: 70%;
+
 }
+
+.content {
+        font-size: 80%;
+}
+
+.footer {
+        font-size: 70%;
+}
+
 
 /* If the screen size is 601px wide or more */
 @media screen and (min-width: 601px) {
@@ -195,17 +241,6 @@ canvas {
                 font-size: 135%;
         }
 
-        .subHeader {
-                font-size: 80%;
-        }
-
-        .subTitle {
-                font-size: 70%;
-        }
-
-        .content {
-                font-size: 70%;
-        }
 }
 
 /* If the screen size is 600px wide or less */
@@ -220,15 +255,4 @@ canvas {
                 font-size: 150%;
         }
 
-        .subHeader {
-                font-size: 80%;
-        }
-
-        .subTitle {
-                font-size: 70%;
-        }
-
-        .content {
-                font-size: 70%;
-        }
 }
