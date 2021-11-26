@@ -120,6 +120,7 @@ a:active {
         border: 7px solid #0e0e0e;
         outline: 7px solid #0e0e0e50;
         border-radius: 50% 50%;
+        -moz-outline-radius: 50% 50%;
         
 
 }
