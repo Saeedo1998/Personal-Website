@@ -66,4 +66,18 @@ function copyTextOld(text) {
     element.innerHTML = "Copy";
   }
 
+  async function playAnimRotate(element) {
+    document.getElementById(element).classList.add('rotate');
+    await delay(1100);
+    document.getElementById(element).classList.remove('rotate');
+
+  }
+
+  function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  
+  // delay(1000).then(() => console.log('ran after 1 second1 passed'));
+  
+
 
