@@ -23,123 +23,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
         <script src="Script.js"></script>
-
-        <style>
-                body {
-                        color: #ebebeb;
-
-                        background-color: #3c3c3c;
-                        /* background-color: #3F5369; */
-                        /*background-image: url('Images/wallpaper.jpg');*/
-                        /* background-image: url('Images/Image (15).png'); */
-                        background-image: url('Images/seamless-abstract-black-floral-pattern.jpg');
-                        font-family: 'Teko';
-                        /* font-family: 'Roboto Mono', monospace; */
-                        /* font-weight: 600; */
-                }
-
-                nav {
-                        font-size: 24px;
-
-                }
-
-                nav a {
-                        color: #ebebeb;
-                }
-
-                nav a:hover {
-                        color: #acacac;
-
-                }
-
-                nav a:active {
-                        color: #d6d6d6;
-
-                }
-
-                /* whole body except nav */
-                .parentContainer {
-                        font-size: 35px;
-
-                }
-
-                .navbar-brand {
-                        color: #ebebeb;
-                }
-
-                .navbar-custom .navbar-custom .navbar-text .navbar-dark {
-                        background-color: #ffffff56;
-                        /* color: black; */
-                        backdrop-filter: blur(7px);
-                        -webkit-backdrop-filter: blur(7px);
-
-                }
-
-                .custom-toggler .navbar-toggler-icon {
-                        /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,235,235, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-                }
-
-                .custom-toggler.navbar-toggler {
-                        /* border-color: rgb(255,102,203); */
-                        border-color: #ebebeb90;
-                }
-
-                .container {
-
-                        text-shadow: 2px 2px #3c3c3c;
-
-                        background-color: #00000057;
-                        backdrop-filter: blur(7px);
-                        -webkit-backdrop-filter: blur(7px);
-
-                }
-
-                .header {
-                        /* font-family: 'Broadway'; */
-                }
-
-                /* If the screen size is 601px wide or more */
-                @media screen and (min-width: 601px) {
-                        .container {
-                                font-size: 90%;
-                        }
-
-                        .header {
-                                font-size: 135%;
-                        }
-
-                        .subHeader {
-                                font-size: 80%;
-                        }
-
-                        .content {
-                                font-size: 70%;
-                        }
-                }
-
-                /* If the screen size is 600px wide or less */
-                @media screen and (max-width: 600px) {
-                        .container {
-                                /* font-size: 20px; */
-                                font-size: 70%;
-                        }
-
-                        .header {
-                                /* font-size: 34px;   */
-                                font-size: 150%;
-                        }
-
-                        .subHeader {
-                                font-size: 80%;
-                        }
-
-                        .content {
-                                font-size: 70%;
-                        }
-                }
-                
-        </style>
+        <link rel="stylesheet" href="Style.css"></style>
 
         <!-- old scrapped code, moved to Script.js -->
         <!-- <script src="Script.js" type="text/JavaScript">
@@ -164,13 +48,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                        <a id="HomeLink" onclick="activeHome()" class="nav-link active" href="Index.html">Home
+                                        <a id="HomeLink" class="nav-link" href="Index.html">Home
                                                 <!--<span class="sr-only">(current)</span>-->
                                         </a>
                                 </li>
                                 <li class="nav-item">
                                         <a class="nav-link disabled" href="Portfolio.html"> Portfolio (coming
                                                 soon..) </a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="css-playground.html">
+                                                CSS Playground </a>
                                 </li>
 
 
@@ -233,26 +121,19 @@
                         </div>
                         <br>
                         <div class="text-center">
-                                <img src="https://www.nicepng.com/png/full/376-3767635_are-you-still-there-portals-portal-turret-png.png" height="30%">
+                                <img id="turret"
+                                 src="https://www.nicepng.com/png/full/376-3767635_are-you-still-there-portals-portal-turret-png.png" 
+                                 onclick="playEasterEggSong()" height="30%">
                         </div>
                         <br>
-                        <!-- <audio src="Portal\12StillAlive.mp3" controls autoplay loop></audio> -->
-                        <script type="Text/JavaScript">
-                               
-                                window.onload = function f() {
-                                        const audio = new Audio("Portal/12StillAlive.mp3");
-                                        audio.addEventListener("canplaythrough", event => {
-                                        /* the audio is now playable; play it if permissions allow */
-                                        audio.play();
-                                        });
-                                }
-                                
-                                
-                        </script>
-                        
+                        <!-- controls autoplay loop -->
+                        <audio id="audioPortal" src="Portal\12StillAlive.mp3" onplaying="stopPlayback()" onended="allowPlayback()"></audio>
+                      
                         <div class="header text-center">
                                 <i>"ARE YOU STILL THERE?"</i>
                         </div>
+
+                        <label id="audioText"></label>
                         <br>
                         <br>
                         <br>
