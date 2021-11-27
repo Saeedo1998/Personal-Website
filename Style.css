@@ -118,9 +118,11 @@ a:active {
         box-shadow: 0px 0px 50px 15px #17A2B8;
 
         border: 7px solid #0e0e0e;
-        outline: 7px solid #0e0e0e50;
+        /* outline: 7px solid #0e0e0e50; */
+        /* commented outline because it appears as square on mobile */
+
         /* border-radius: 50% 50%; */
-        /* to fix mobile issue */
+        /* to fix mobile issue (update: didn't work. had to comment outline) */
         /* https://stackoverflow.com/questions/17973394/border-radius-not-working-in-modern-native-android-browser */
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
