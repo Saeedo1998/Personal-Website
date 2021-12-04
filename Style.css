@@ -1,7 +1,8 @@
 body {
         color: #ebebeb;
 
-        background-color: #3c3c3c;
+        /* background-color: #3c3c3c; */
+        background-image: linear-gradient(#1c1c1c, #17A2B8);
         /* background-color: #3F5369; */
         /*background-image: url('Images/wallpaper.jpg');*/
         /* background-image: url('Images/Image (15).png'); */
@@ -11,8 +12,29 @@ body {
         /* font-weight: 600; */
 }
 
+.navbar {
+        /* position: initial; */
+        /* z-index: 5; */
+        background-image: linear-gradient(#1c1c1c00 0%, #17a3b8d0 10%, 
+        #1c1c1c50 40%, #17a3b8d0 80%, #1c1c1c00 100%);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+
+}
+
+/* .navbarOutline {
+        width: 100%;
+        height: 50px;
+        display: list;
+        position: inherit;
+        z-index: 0;
+        background-image: linear-gradient(#17a3b8d0 0%, #1c1c1c , #1c1c1c50 75%, #1c1c1c00 100%);
+
+} */
+
 nav {
         font-size: 28px;
+
 
 }
 
@@ -263,6 +285,17 @@ canvas {
 }
 
 .welcome {
+        background-image:
+        linear-gradient(rgb(22, 22, 22) 0%,
+        rgb(109, 245, 255) 50%, 
+        rgb(255, 255, 255) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+}
+
+.cssPlayground {
         background-image:
         linear-gradient(rgb(22, 22, 22) 0%,
         rgb(109, 245, 255) 50%, 
