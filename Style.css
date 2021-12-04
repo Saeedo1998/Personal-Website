@@ -262,6 +262,17 @@ canvas {
 
 }
 
+.welcome {
+        background-image:
+        linear-gradient(rgb(22, 22, 22) 0%,
+        rgb(109, 245, 255) 50%, 
+        rgb(255, 255, 255) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+}
+
 .subHeader {
         font-size: 100%;
 }
