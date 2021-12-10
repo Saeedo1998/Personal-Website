@@ -2,10 +2,10 @@ body {
         color: #ebebeb;
 
         background-color: #1c1c1c;
-        background-image: linear-gradient(#1c1c1c, #17A2B8);
         /* background-color: #3F5369; */
         /*background-image: url('Images/wallpaper.jpg');*/
         /* background-image: url('Images/Image (15).png'); */
+        /* background-image: repeating-linear-gradient(#1c1c1c 0pt, #173db8 500pt, #1c1c1c 1000pt); */
         background-image: url('Images/seamless-abstract-black-floral-pattern.jpg');
         font-family: 'Teko';
         /* font-family: 'Roboto Mono', monospace; */
