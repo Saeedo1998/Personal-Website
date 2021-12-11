@@ -12,6 +12,12 @@ body {
         /* font-weight: 600; */
 }
 
+::selection {
+        color: #1c1c1c;
+        background-color: #17A2B8;
+        text-shadow: none;
+}
+
 .navbar {
         /* position: initial; */
         /* z-index: 5; */
@@ -35,11 +41,12 @@ body {
 nav {
         font-size: 28px;
 
-
 }
 
 nav a {
         color: #ebebeb;
+        -webkit-transition: text-shadow 0.2s; /* For Safari 3.0 to 6.0 */
+        transition: text-shadow 0.2s; /* For modern browsers */
 }
 
 nav a:hover {
@@ -183,6 +190,58 @@ a:active {
         /* border-color: rgb(255,102,203); */
         border-color: #ebebeb90;
 }
+
+a.previous {
+        position: fixed;
+
+        font-size: 70%;
+        text-shadow: none;
+        /* background:rgb(109, 245, 255); */
+        background:#1cc0da;
+        color: #1c1c1c;
+        text-decoration: none;
+        display: inline;
+        padding: 7pt 12pt;
+
+        -webkit-transition: background 0.2s; /* For Safari 3.0 to 6.0 */
+        transition: background 0.2s; /* For modern browsers */
+}
+a.previous:hover{
+        background:#1fe1ff00;
+        color: #1fe1ff;
+        /* animation-name: hover;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal; */
+}
+
+a.previous:active{
+        color: #17A2B8;
+
+}
+
+/* @keyframes hover {
+        from {
+                background-image:
+                linear-gradient(rgb(22, 22, 22) 0%,
+                rgb(109, 245, 255) 35%,
+                rgb(109, 245, 255) 50%, 
+                rgb(109, 245, 255) 65%,
+                rgb(255, 255, 255) 100%);
+                color: #1c1c1c;
+                text-decoration: none; 
+        }
+        to {
+                color: #1c1c1c;
+        background-image:
+        linear-gradient(rgb(255, 255, 255) 0%,
+        rgb(109, 245, 255) 35%,
+        rgb(109, 245, 255) 50%, 
+        rgb(109, 245, 255) 65%,
+        rgb(22, 22, 22) 100%);
+        }
+} */
 
 .section {
         margin-left: 5%;
