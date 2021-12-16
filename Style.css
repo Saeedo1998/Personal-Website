@@ -369,6 +369,10 @@ canvas {
         font-size: 80%;
 }
 
+.projectInfo {
+        margin-left: 10pt;
+}
+
 .footer {
         font-size: 70%;
 }
