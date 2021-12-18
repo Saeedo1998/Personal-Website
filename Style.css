@@ -160,6 +160,11 @@ a:active {
 
 }
 
+/* whole body */
+.container {
+        border-radius: 1em;
+}
+
 /* whole body except nav */
 .parentContainer {
         font-size: 35px;
