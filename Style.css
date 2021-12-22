@@ -400,6 +400,7 @@ canvas {
         .container {
                 /* font-size: 20px; */
                 font-size: 70%;
+                width: 80%;
         }
 
         .header {
