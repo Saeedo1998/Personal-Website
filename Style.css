@@ -94,6 +94,9 @@ a:active {
         padding-right: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
+
+        -webkit-transition: text-shadow 0.1s; /* For Safari 3.0 to 6.0 */
+        transition: text-shadow 0.1s; /* For modern browsers */
 }
 
 .email:hover {
@@ -202,23 +205,39 @@ a.previous {
         font-size: 70%;
         text-shadow: none;
         /* background:rgb(109, 245, 255); */
-        background:#1cc0da;
+        background:linear-gradient(90deg, #3c3c3c, #1cc0da);
         color: #1c1c1c;
         text-decoration: none;
         display: inline;
         padding: 7pt 12pt;
 
+        border-radius: 0.2em;
+
         -webkit-transition: background 0.2s; /* For Safari 3.0 to 6.0 */
         transition: background 0.2s; /* For modern browsers */
 }
 a.previous:hover{
-        background:#1fe1ff00;
+        /* background:#1fe1ff00; */
+        background:linear-gradient(90deg, #1cc0da, #3c3c3c);
         color: #1fe1ff;
-        /* animation-name: hover;
-        animation-timing-function: linear;
+
+}
+
+.breath {
+        animation-name: breath;
+        animation-timing-function: ease;
         animation-duration: 1s;
         animation-iteration-count: infinite;
-        animation-direction: normal; */
+        animation-direction: alternate-reverse;
+}
+
+@keyframes breath {
+        from {
+                color: #17A2B8;
+        }
+        to {
+                color: #3c3c3c;
+        }
 }
 
 a.previous:active{
