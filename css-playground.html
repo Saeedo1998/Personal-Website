@@ -22,14 +22,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
 
         <script src="Script.js"></script>
         <script src="Footer.js"></script>
@@ -150,55 +150,56 @@
 
                                 </div>
                                 <br>
-                                <div id="Static_Gradients" class="header">Static Gradients</div>
-                                <br>
-                                <div class="row">
-                                        <div class="col-6">
-                                                Black To Blue Gradient
-                                        </div>
-                                        <div class="col-6">
-                                                Black To Blue - 50% Opacity
-                                        </div>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6">
-                                                <canvas class="gradientBlackToBlue"></canvas>
-
-                                                <div class="content">
-                                                        CSS:
-                                                        <br>
-                                                        <span id="gradientBlackToBlueCSS">background:
-                                                                linear-gradient(#000000, #31338d);</span>
-                                                        <br>
-                                                        <button class="btn btn-outline-info btn-lg"
-                                                                onclick="copyTextFromElement('gradientBlackToBlueCSS', 'gradient1Label')"
-                                                                onmouseleave="mouseLeave('gradient1Label')">
-                                                                <label id="gradient1Label"
-                                                                        style="display: inline;">Copy</label>
-                                                        </button>
-
+                                <section id="Static_Gradients">
+                                        <div class="header">Static Gradients</div>
+                                        <br>
+                                        <div class="row">
+                                                <div class="col-6">
+                                                        Black To Blue Gradient
+                                                </div>
+                                                <div class="col-6">
+                                                        Black To Blue - 50% Opacity
                                                 </div>
                                         </div>
-                                        <div class="col-6">
-                                                <canvas class="gradientBlackToBlueOpacity-50"></canvas>
+                                        <div class="row">
+                                                <div class="col-6">
+                                                        <canvas class="gradientBlackToBlue"></canvas>
 
-                                                <div class="content">
-                                                        CSS:
-                                                        <br>
-                                                        <span id="gradientBlackToBlueOpacity-50">background:
-                                                                linear-gradient(#00000050, #31338d50);</span>
-                                                        <br>
-                                                        <button class="btn btn-outline-info btn-lg"
-                                                                onclick="copyTextFromElement('gradientBlackToBlueOpacity-50', 'gradient2Label')"
-                                                                onmouseleave="mouseLeave('gradient2Label')">
-                                                                <label id="gradient2Label"
-                                                                        style="display: inline;">Copy</label>
-                                                        </button>
+                                                        <div class="content">
+                                                                CSS:
+                                                                <br>
+                                                                <span id="gradientBlackToBlueCSS">background:
+                                                                        linear-gradient(#000000, #31338d);</span>
+                                                                <br>
+                                                                <button class="btn btn-outline-info btn-lg"
+                                                                        onclick="copyTextFromElement('gradientBlackToBlueCSS', 'gradient1Label')"
+                                                                        onmouseleave="mouseLeave('gradient1Label')">
+                                                                        <label id="gradient1Label"
+                                                                                style="display: inline;">Copy</label>
+                                                                </button>
 
+                                                        </div>
+                                                </div>
+                                                <div class="col-6">
+                                                        <canvas class="gradientBlackToBlueOpacity-50"></canvas>
+
+                                                        <div class="content">
+                                                                CSS:
+                                                                <br>
+                                                                <span id="gradientBlackToBlueOpacity-50">background:
+                                                                        linear-gradient(#00000050, #31338d50);</span>
+                                                                <br>
+                                                                <button class="btn btn-outline-info btn-lg"
+                                                                        onclick="copyTextFromElement('gradientBlackToBlueOpacity-50', 'gradient2Label')"
+                                                                        onmouseleave="mouseLeave('gradient2Label')">
+                                                                        <label id="gradient2Label"
+                                                                                style="display: inline;">Copy</label>
+                                                                </button>
+
+                                                        </div>
                                                 </div>
                                         </div>
-                                </div>
-
+                                </section>
                                 <br>
                                 <br>
                                 <br>
@@ -265,75 +266,83 @@
                                 <hr>
                                 <br>
                                 <br>
-                                <div id="Dynamic_Gradients" class="header">Dynamic Gradients</div>
-                                <br>
-                                
-                                <div class="row">
-                                        <div class="col-6">
-                                                RGB
-                                        </div>
-                                        <div class="col-6">
 
-                                        </div>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6">
-                                                <canvas class="gradientRGB">
+                                <section id="Dynamic_Gradients">
+                                        <div class="header">Dynamic Gradients</div>
+                                        <br>
 
-                                                </canvas>
+                                        <div class="row">
+                                                <div class="col-6">
+                                                        RGB
+                                                </div>
+                                                <div class="col-6">
 
-                                                <div class="content">
-                                                        Original code by:
-                                                        <br>
-                                                        <a href="https://codepen.io/nohoid/pen/kIfto" target="_blank">
-                                                                Milan Nohejl (nohoid)
-                                                        </a>
                                                 </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="row">
+                                                <div class="col-6">
+                                                        <canvas class="gradientRGB">
 
+                                                        </canvas>
+
+                                                        <div class="content">
+                                                                Original code by:
+                                                                <br>
+                                                                <a href="https://codepen.io/nohoid/pen/kIfto"
+                                                                        target="_blank">
+                                                                        Milan Nohejl (nohoid)
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                                <div class="col-6">
+
+                                                </div>
                                         </div>
-                                </div>
+                                </section>
                                 <br>
                                 <hr>
                                 <br>
-                                <div id="Animations" class="header">Animations</div>
-                                <br>
-                                <div class="row">
-                                        <div class="col-6">
-                                                This is a <span class="breath">Breathing</span> text.
-                                        </div>
-                                        <div class="col-6">
-                                                This is a <span class="heartbeat">Beating</span> text.
-                                        </div>
-                                </div>
-                                <br>
-                                <div class="row noShadow content">
-                                        <div class="col-6">
-                                                CSS:
 
-                                                <script src="https://gist.github.com/Saeedo1998/dfca32bb228edfe7855be26f55b6e126.js"></script>
+                                <section id="Animations">
+                                        <div class="header">Animations</div>
+                                        <br>
+                                        <div class="row">
+                                                <div class="col-6">
+                                                        This is a <span class="breath">Breathing</span> text.
+                                                </div>
+                                                <div class="col-6">
+                                                        This is a <span class="heartbeat">Beating</span> text.
+                                                </div>
                                         </div>
-                                        <div class="col-6">
-                                               CSS:
+                                        <br>
+                                        <div class="row noShadow content">
+                                                <div class="col-6">
+                                                        CSS:
 
-                                               <script src="https://gist.github.com/Saeedo1998/a716a863efeab3c5002ce6bf5db94d40.js"></script>
+                                                        <script
+                                                                src="https://gist.github.com/Saeedo1998/dfca32bb228edfe7855be26f55b6e126.js"></script>
+                                                </div>
+                                                <div class="col-6">
+                                                        CSS:
+
+                                                        <script
+                                                                src="https://gist.github.com/Saeedo1998/a716a863efeab3c5002ce6bf5db94d40.js"></script>
+                                                </div>
                                         </div>
-                                </div>
+                                </section>
 
-                                
                         </div>
 
 
                         <br>
                         <br>
                         <br>
-                        
+
                         <footer-saeed></footer-saeed>
 
                         <br>
 
-                        
+
 
                 </div>
                 <br>
