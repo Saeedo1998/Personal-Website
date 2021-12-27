@@ -12,6 +12,10 @@ body {
         /* font-weight: 600; */
 }
 
+.noShadow{
+        text-shadow: none;
+}
+
 ::selection {
         color: #1c1c1c;
         background-color: #17A2B8;
@@ -224,19 +228,81 @@ a.previous:hover{
 }
 
 .breath {
+        background-color: #1cc0da;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+        
         animation-name: breath;
+        animation-timing-function: ease;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+}
+
+@keyframes breath {
+        0%{
+                background-color: #3c3c3c;
+        }
+        100% {
+                background-color: #1cc0da;
+        }
+}
+
+.heartbeat {
+        background-color: #b81717;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+        
+        animation-name: heartbeat;
         animation-timing-function: ease;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
 }
 
-@keyframes breath {
-        from {
-                color: #17A2B8;
+@keyframes heartbeat {
+        0%{
+                background-color: #b81717;
         }
-        to {
-                color: #3c3c3c;
+        50%{
+                background-color: #3c3c3c;
+        }
+        100% {
+                background-color: #b81717;
+        }
+}
+
+.breathEvil {
+        background-color: linear-gradient(#17A2B8 0%, #3c3c3c 50%, #17A2B8 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+        
+        animation-name: breathEvil;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+}
+
+@keyframes breathEvil {
+        0% {
+                background-color: red;
+
+        }
+        50%{
+                background-color: #3c3c3c00;
+
+        }
+        100% {
+                background-color: #17A2B800;
+
+
         }
 }
 
