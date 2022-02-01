@@ -21,7 +21,7 @@ window.onload = function PageLoad() {
 function ChangePageTitle(url) {
   // newPageTitle = 'Saeed Badghaish';
 
-  if (url.includes("Portfolio")) {
+  if (url.includes("portfolio")) {
     document.title = 'Saeed Badghaish - Portfolio';
 
   } else if (url.includes("css-playground")) {
