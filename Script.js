@@ -12,9 +12,12 @@ function activeHome() {
 
 window.onload = function PageLoad() {
   // this will get the full URL at the address bar
-  // var url = window.location.href;
-  var url = window.location.href.substring(0, window.location.href.lastIndexOf("/")+1)
+  var url = window.location.href;
+  // var url = window.location.href.substring(0, window.location.href.lastIndexOf("/")+1)
 
+  if (url.includes('.html') == false) {
+    url = +".html";
+  }
   ChangePageTitle(url);
   UpdateActiveLink(url);
 
