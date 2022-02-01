@@ -17,6 +17,7 @@ window.onload = function PageLoad() {
 
   if (url.includes('.html') == false) {
     url = +".html";
+    console.log('updated url');
   }
   ChangePageTitle(url);
   UpdateActiveLink(url);
