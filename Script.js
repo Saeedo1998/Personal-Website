@@ -11,7 +11,6 @@ function activeHome() {
 
 
 window.onload = function PageLoad() {
-
   // this will get the full URL at the address bar
   var url = window.location.href;
   ChangePageTitle(url);
