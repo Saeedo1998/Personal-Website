@@ -18,7 +18,7 @@ window.onload = function PageLoad() {
 
 }
 
-void function ChangePageTitle(url) {
+function ChangePageTitle(url) {
   // newPageTitle = 'Saeed Badghaish';
 
   if (url.includes("Portfolio")) {
@@ -34,7 +34,7 @@ void function ChangePageTitle(url) {
   }
 }
 
-void function UpdateActiveLink(url) {
+function UpdateActiveLink(url) {
 
   // passes on every "a" tag
   $(".navbarLinks a").each(function () {
