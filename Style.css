@@ -82,7 +82,7 @@ a:hover {
     color: #1fe1ff;
 }
 
-a:active {
+ a:active {
     /* color: #a59a07; */
     color: #17A2B8;
 
@@ -209,12 +209,14 @@ a:active {
 
 a.previous {
         position: fixed;
-
         font-size: 70%;
         text-shadow: none;
         /* background:rgb(109, 245, 255); */
-        background:linear-gradient(90deg, #3c3c3c, #1cc0da);
+        /* background:#1cc0da; */
+        background:#1cc1daa6;
+        /* background:linear-gradient(90deg, #3c3c3c, #1cc0da); */
         color: #1c1c1c;
+
         text-decoration: none;
         display: inline;
         padding: 7pt 12pt;
@@ -226,10 +228,19 @@ a.previous {
 }
 a.previous:hover{
         /* background:#1fe1ff00; */
-        background:linear-gradient(90deg, #1cc0da, #3c3c3c);
-        color: #1fe1ff;
+        /* background:linear-gradient(90deg, #1cc0da, #3c3c3c); */
+        background:linear-gradient(90deg,#1cc0da,#1592a5);
+        /* color: #1fe1ff; */
+        color:#ebebeb;
+
 
 }
+a.previous:active{
+        color:#ebebeb;
+
+
+}
+
 
 .breath {
         background-color: #1cc0da;
