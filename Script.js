@@ -51,7 +51,7 @@ function ChangePageTitle(url) {
 
 function UpdateActiveLink(a){
   //anchor tag in navbar
-  document.getElementById(a).addClass('active');
+  document.getElementById(a).classList.add('active');
 }
 
 function DynamicallyUpdateActiveLink(url) {
