@@ -21,6 +21,9 @@ window.onload = function PageLoad() {
   }
   ChangePageTitle(url);
   UpdateActiveLink(url);
+  var pathName = document.location.pathname;
+  console.log('pathName:', pathName);
+  console.log('url:', url);
 
 }
 
@@ -45,10 +48,6 @@ function UpdateActiveLink(url) {
   // passes on every "a" tag
   $(".navbarLinks a").each(function () {
     console.log('nice2');
-
-    var pathName = document.location.pathname;
-    console.log(pathName);
-
         // if ($("navbar nav ul li a") != null) {
         //     var currentLink = $("nav ul li a[href='" + pathName + "']");
         //     currentLink.addClass("active");
