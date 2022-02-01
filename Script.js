@@ -15,7 +15,7 @@ window.onload = function PageLoad() {
   var url = window.location.href;
   // var url = window.location.href.substring(0, window.location.href.lastIndexOf("/")+1)
 
-  if (url.includes('.html') == false) {
+  if (!url.includes('.html')) {
     url += ".html";
     console.log('updated url');
   }
