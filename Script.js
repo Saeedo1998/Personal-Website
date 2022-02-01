@@ -12,7 +12,9 @@ function activeHome() {
 
 window.onload = function PageLoad() {
   // this will get the full URL at the address bar
-  var url = window.location.href;
+  // var url = window.location.href;
+  var url = window.location.href.substring(0, window.location.href.lastIndexOf("/")+1)
+
   ChangePageTitle(url);
   UpdateActiveLink(url);
 
@@ -41,7 +43,7 @@ function UpdateActiveLink(url) {
     console.log('nice2');
 
     // checks if its the same on the address bar
-    if (url.includes(this.href)) {
+    if (url == (this.href)) {
       console.log('nice3');
 
       $(this).closest("li").addClass("active");
@@ -50,6 +52,14 @@ function UpdateActiveLink(url) {
 
     }
   });
+
+  // var AreAllLinksInactive = true;
+  // $(".navbarLinks a").each(function (){
+  //   if($(this).classList.includes('active')){
+  //     AreAllLinksInactive = false;
+  //   }
+  // });
+
 }
 
 function redirectToHome() {
