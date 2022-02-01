@@ -41,7 +41,7 @@ function UpdateActiveLink(url) {
     console.log('nice2');
 
     // checks if its the same on the address bar
-    if (url == (this.href)) {
+    if (url.includes(this.href)) {
       console.log('nice3');
 
       $(this).closest("li").addClass("active");
