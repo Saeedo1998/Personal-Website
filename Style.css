@@ -51,24 +51,26 @@ nav {
 
 }
 
-nav a {
+nav ul li a {
         color: #ebebeb;
         -webkit-transition: text-shadow 0.2s; /* For Safari 3.0 to 6.0 */
         transition: text-shadow 0.2s; /* For modern browsers */
 }
 
-nav a:hover {
+nav ul li a:hover {
         color: #ffffff;
         /* color: #acacac; */
         text-shadow: 0px 0px 15px #ffffff;
 }
 
-nav a:active {
-        color: #d6d6d6;
+nav ul li a:active {
+        /* color: #d6d6d6; */
+        color: #ffffff;
 }
 
-.active {
-        color: #ffffff;
+nav ul li .active {
+        /* color: #ffffff; */
+        color: #ebebeb;
         text-shadow: 0px 0px 15px #ffffff;
 }
 
