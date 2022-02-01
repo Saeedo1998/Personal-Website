@@ -15,10 +15,11 @@ window.onload = function PageLoad() {
   var url = window.location.href;
   // var url = window.location.href.substring(0, window.location.href.lastIndexOf("/")+1)
 
-  if (!url.includes('.html')) {
-    url += ".html";
-    console.log('updated url');
-  }
+  // if (!url.includes('.html')) {
+  //   url += ".html";
+  //   console.log('updated url');
+  // }
+
   ChangePageTitle(url);
   UpdateActiveLink(url);
   var pathName = document.location.pathname;
@@ -32,35 +33,39 @@ function ChangePageTitle(url) {
 
   if (url.includes("portfolio")) {
     document.title = 'Saeed Badghaish - Portfolio';
+    UpdateActiveLink('a_Portfolio');
 
   } else if (url.includes("css-playground")) {
     document.title = 'Saeed Badghaish - CSS Playground';
+    UpdateActiveLink('a_CSS-Playground');
+
   }
   else {
     document.title = 'Saeed Badghaish - Home';
     // document.getElementById('LinkHome').classList.add('active');
+    UpdateActiveLink('a_Index');
+
     console.log('nice1');
   }
 }
 
-function UpdateActiveLink(url) {
+function UpdateActiveLink(a){
+  //anchor tag in navbar
+  document.getElementById(a).addClass('active')
+}
+
+function DynamicallyUpdateActiveLink(url) {
 
   // passes on every "a" tag
   $(".navbarLinks a").each(function () {
-    console.log('nice2');
-        // if ($("navbar nav ul li a") != null) {
-        //     var currentLink = $("nav ul li a[href='" + pathName + "']");
-        //     currentLink.addClass("active");
-        // }
-
+    // console.log('nice2');
     // checks if its the same on the address bar
     if (url == (this.href)) {
-      console.log('nice3');
+      // console.log('nice3');
 
       $(this).closest("li").addClass("active");
       //for making parent of submenu active
       // $(this).closest("li").parent().parent().addClass("active");
-      var currentLink = $("nav ul li a[href='" + pathName + "']");
     }
 
   });
