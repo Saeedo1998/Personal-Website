@@ -46,6 +46,14 @@ function UpdateActiveLink(url) {
   $(".navbarLinks a").each(function () {
     console.log('nice2');
 
+    var pathName = document.location.pathname;
+    console.log(pathName);
+
+        // if ($("navbar nav ul li a") != null) {
+        //     var currentLink = $("nav ul li a[href='" + pathName + "']");
+        //     currentLink.addClass("active");
+        // }
+
     // checks if its the same on the address bar
     if (url == (this.href)) {
       console.log('nice3');
@@ -53,8 +61,9 @@ function UpdateActiveLink(url) {
       $(this).closest("li").addClass("active");
       //for making parent of submenu active
       // $(this).closest("li").parent().parent().addClass("active");
-
+      var currentLink = $("nav ul li a[href='" + pathName + "']");
     }
+
   });
 
   // var AreAllLinksInactive = true;
