@@ -9,18 +9,48 @@ function activeHome() {
   // document.getElementById('Show').style.display='none';
 };
 
-window.onload = function changePageTitle() {
-  // newPageTitle = 'Saeed Badghaish';
+
+window.onload = function PageLoad() {
+
+  // this will get the full URL at the address bar
   var url = window.location.href;
+  ChangePageTitle(url);
+  UpdateActiveLink(url);
+
+}
+
+function ChangePageTitle(url) {
+  // newPageTitle = 'Saeed Badghaish';
+
   if (url.includes("Portfolio")) {
     document.title = 'Saeed Badghaish - Portfolio';
+
   } else if (url.includes("css-playground")) {
     document.title = 'Saeed Badghaish - CSS Playground';
   }
   else {
     document.title = 'Saeed Badghaish - Home';
+    // document.getElementById('LinkHome').classList.add('active');
+    console.log('nice1');
   }
+}
 
+function UpdateActiveLink(url) {
+
+  // passes on every "a" tag
+  $(".navbarLinks a").each(function () {
+    console.log('nice2');
+
+    // checks if its the same on the address bar
+    if (url == (this.href)) {
+      console.log('nice3');
+
+      $(this).closest("li").addClass("active");
+      //for making parent of submenu active
+      // $(this).closest("li").parent().parent().addClass("active");
+
+    }
+  });
 }
 
 function redirectToHome() {
@@ -80,11 +110,11 @@ function delay(time) {
 // delay(1000).then(() => console.log('ran after 1 second1 passed'));
 
 function playEasterEggSong() {
-    // const audio = new Audio("Portal/12StillAlive.mp3");
-    const audio = document.getElementById('audioPortal');
-    audio.play();
-      
-  }
+  // const audio = new Audio("Portal/12StillAlive.mp3");
+  const audio = document.getElementById('audioPortal');
+  audio.play();
+
+}
 
   // let isAudioPlaying = false;
   // let audioText = document.getElementById('audioText');
