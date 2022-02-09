@@ -209,6 +209,65 @@ a:hover {
         border-color: #ebebeb90;
 }
 
+.flexContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+}
+
+a.button {
+        /* background:#1cc1daa6; */
+        background:linear-gradient(#1cc1dabb,#1592a5bb);
+
+        color: #ebebeb;
+        text-decoration: none;
+        display: inline;
+        padding: 7pt 12pt;
+
+        border-radius: 0.2em;
+
+        -webkit-transition: background-image 0.2s; /* For Safari 3.0 to 6.0 */
+        transition: background-image 0.2s; /* For modern browsers */
+}
+
+a.button:hover {
+        background:linear-gradient(360deg,#1cc0da,#1592a5);
+        /* color: #1fe1ff; */
+        color:#ffffff;
+}
+
+a.button:active {
+        background:linear-gradient(#1cc1da,#1592a5);
+        color:#ebebeb;
+}
+
+.rotatingColors {
+        background:linear-gradient(#a80000,#24b600, #00a2e2, #7500e2);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: none;
+        
+        animation-name: rotatingColors;
+        animation-timing-function: ease;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+}
+
+@keyframes rotatingColors {
+        0%{
+                background:linear-gradient(0deg, #a80000,#24b600, #00a2e2, #7500e2);
+                transform: rotate(0deg);
+        }
+        100% {
+                /* background:linear-gradient(#7500e2, #00a2e2,#24b600, #a80000); */
+                background:linear-gradient(90deg,#a80000,#24b600, #00a2e2, #7500e2);
+                transform: rotate(360deg);
+        }
+}
+
 a.previous {
         position: fixed;
         font-size: 70%;
