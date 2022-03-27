@@ -1,11 +1,32 @@
+/* default theme */
+:root{
+        --color-primary:#ebebeb;
+        --color-primary-hover:#ffffff;
+        --color-primary-active:#ebebeb;
+
+        --color-secondary:#1c1c1c;
+        --color-tertiary:1;
+
+        --link-color:#1cc0da;
+        --link-color-hover:#1fe1ff;
+        --link-color-active:#17A2B8;
+
+        --button-nav-primary:1;
+        --button-nav-secondary:1;
+        --button-primary:1;
+        --button-primary:1;
+        --button-primary:1;
+        
+}
+
 html {
         scroll-behavior: smooth;
 }
 
 body {
-        color: #ebebeb;
+        color: var(--color-primary);
 
-        background-color: #1c1c1c;
+        background-color: var(--color-secondary);
         /* background-color: #3F5369; */
         /*background-image: url('Images/wallpaper.jpg');*/
         /* background-image: url('Images/Image (15).png'); */
@@ -68,7 +89,7 @@ nav ul li a:active {
         color: #ffffff;
 }
 
-nav ul li .active {
+nav ul li .current {
         /* color: #ffffff; */
         color: #ebebeb;
         text-shadow: 0px 0px 15px #ffffff;
@@ -76,17 +97,20 @@ nav ul li .active {
 
 a {
     /* color: #cec107; */
-    color: #1cc0da;
+    /* color: #1cc0da; */
+    color:var(--link-color);
 }
 
 a:hover {
     /* color: #ecdd08; */
-    color: #1fe1ff;
+    /* color: #1fe1ff; */
+    color:var(--link-color-hover);
 }
 
  a:active {
     /* color: #a59a07; */
-    color: #17A2B8;
+    /* color: #17A2B8; */
+    color:var(--link-color-active);
 
 }
 
