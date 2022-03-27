@@ -51,9 +51,10 @@ function ChangePageTitle(url) {
 
 function UpdateActiveLink(a){
   //anchor tag in navbar
-  document.getElementById(a).classList.add('active');
+  document.getElementById(a).classList.add('current');
 }
 
+//unused
 function DynamicallyUpdateActiveLink(url) {
 
   // passes on every "a" tag
@@ -92,6 +93,7 @@ function redirectToHome() {
 //     }
 // }
 
+//unused
 function copyTextOld(text) {
   // var copyText = document.getElementById("myInput");
   var copyText = text;
