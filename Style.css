@@ -117,7 +117,7 @@ a:hover {
 .email {
         font-size: 85%;
         background: #36363650 none repeat scroll 0 0;
-        border: 1px solid #1cc0da;
+        border: 0.05em solid #1cc0da;
         border-radius: 5px 20px;
         display: -webkit-inline-flex;
         margin-left: auto;
@@ -129,23 +129,40 @@ a:hover {
         padding-top: 5px;
         padding-bottom: 5px;
 
-        -webkit-transition: text-shadow 0.1s; /* For Safari 3.0 to 6.0 */
-        transition: text-shadow 0.1s; /* For modern browsers */
+        -webkit-transition: text-shadow 0.3s; /* For Safari 3.0 to 6.0 */
+        transition: text-shadow 0.3s; /* For modern browsers */
+        -webkit-transition: border-radius 0.15s ease-in-out;
+        transition: border-radius 0.15s ease-in-out;       
+
 }
 
 .email:hover {
-        border: 1px solid #1fe1ff;
+        border-color: #1fe1ff;
         text-shadow: 0px 0px 10px #17A2B8;
         background: #36363670 none repeat scroll 0 0;
-
-
+        /* animation: mailAnim 1s none;
+        animation-timing-function: ease-in-out; */
+        
+        border-radius: 5px 5px;
 }
+
 
 .email:active {
-        border: 1px solid #17A2B8;
-
+        border-color: #17A2B8;
 
 }
+
+/* useless animation
+transition: border-radius 0.3s linear;
+was enough */
+/* @keyframes mailAnim {
+        from {
+                border-radius: initial;
+        }
+        to {
+                border-radius: 20px 5px;
+        }
+} */
 
 @keyframes rotate {
         from {
@@ -435,6 +452,7 @@ a.previous:active{
 
 section {
         margin-left: 5%;
+        width: 80%;
 }
 
 .about-section {
