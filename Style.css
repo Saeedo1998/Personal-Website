@@ -256,14 +256,14 @@ a.button {
 }
 
 a.button:hover {
-        background:linear-gradient(360deg,#1cc0da,#1592a5);
-        /* color: #1fe1ff; */
-        color:#ffffff;
+        background:linear-gradient(#1cc1da,#1592a5);
+        color:#ebebeb;
 }
 
 a.button:active {
-        background:linear-gradient(#1cc1da,#1592a5);
-        color:#ebebeb;
+        background:linear-gradient(360deg,#1cc0da,#1592a5);
+        /* color: #1fe1ff; */
+        color:#ffffff;
 }
 
 .rotatingColors {
