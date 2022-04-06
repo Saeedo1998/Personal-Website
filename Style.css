@@ -450,9 +450,9 @@ a.previous:active{
         }
 } */
 
-section {
+
+.contentMargin {
         margin-left: 5%;
-        width: 80%;
 }
 
 .about-section {
