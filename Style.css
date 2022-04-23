@@ -250,6 +250,20 @@ was enough */
         border-color: #ebebeb90;
 }
 
+.iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+      }
+      .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
 .flexContainer{
         display: flex;
         flex-wrap: wrap;
@@ -457,6 +471,8 @@ a.previous:active{
 
 .contentMargin {
         margin-left: 5%;
+        margin-right: 5%;
+
 }
 
 .about-section {
