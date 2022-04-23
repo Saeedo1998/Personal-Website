@@ -254,7 +254,11 @@ was enough */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        
+        /* margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 2em;         */
+        align-content: space-around;
+        gap: 0.75em;
 }
 
 a.button {
