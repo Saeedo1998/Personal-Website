@@ -152,9 +152,9 @@ canvas {
 
 @keyframes pulse {
     0%{
-            text-shadow: #20e1ff 0 0 0;
+            text-shadow: #20e1ff 0 0 0 0;
     }
     100% {
-            text-shadow: #20e1ff50 0 0 16px;
+            text-shadow: #20e1ff50 0 0 0 16px;
     }
 }
