@@ -136,25 +136,32 @@ canvas {
     }
 }
 
-.pulse {
+.pulseText {
     background-color: #20e1ff;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     text-shadow: none;
+}
+
+.pulse {
+    background-color: #20e1ff;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
     
     animation-name: pulse;
     animation-timing-function: ease;
-    animation-duration: 1s;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
 }
 
 @keyframes pulse {
     0%{
-            text-shadow: #20e1ff 0 0 0 0;
+            box-shadow: #20e1ff 0 0 0 0;
     }
     100% {
-            text-shadow: #20e1ff50 0 0 0 16px;
+            box-shadow: #20e1ff00 0 0 0 20px;
     }
 }
