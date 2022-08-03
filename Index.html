@@ -51,6 +51,22 @@
              </script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+        <!-- local visits count -->
+        <script type="text/javascript">
+                var visitCount = localStorage.getItem("page_view");
+
+                // Check if page_view entry is present
+                if (visitCount) {
+                        visitCount = Number(visitCount) + 1;
+                        localStorage.setItem("page_view", visitCount);
+                } else {
+                        visitCount = 1;
+                        localStorage.setItem("page_view", 1);
+                }
+                console.log("Local visits: ", visitCount);
+
+        </script>
+
 </head>
 
 <body>
