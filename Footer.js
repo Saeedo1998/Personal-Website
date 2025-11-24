@@ -11,7 +11,7 @@
 class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `<div class="footer text-center">
-      Saeed Badghaish © 2023
+      Saeed Badghaish © 2025
       </div>
       `;
     }
